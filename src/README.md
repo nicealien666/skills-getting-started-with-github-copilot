@@ -25,6 +25,18 @@ A super simple FastAPI application that allows students to view and sign up for 
    - API documentation: http://localhost:8000/docs
    - Alternative documentation: http://localhost:8000/redoc
 
+## Smoke Test Checklist
+
+Use these quick checks after starting the server:
+
+1. Confirm the server starts without errors.
+2. Open http://localhost:8000/ and verify the activity dashboard loads.
+3. Open http://localhost:8000/docs and confirm the FastAPI docs render.
+4. Send `GET /activities` and confirm the activity catalog returns JSON.
+5. Sign up for an activity from the UI and confirm the participant list updates.
+6. Remove a participant with the delete icon and confirm the list updates again.
+7. If you use `--reload`, make a small code change and confirm `watchfiles` reloads the app.
+
 ## API Endpoints
 
 | Method | Endpoint                                                          | Description                                                         |
